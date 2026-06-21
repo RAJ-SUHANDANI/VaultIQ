@@ -7,9 +7,7 @@
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-06B6D4?logo=tailwindcss)
 ![Three.js](https://img.shields.io/badge/Three.js-000?logo=three.js)
-![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?logo=vercel)
-
-**Live demo:** [https://vaultiq-eight.vercel.app](https://vaultiq-eight.vercel.app)
+**Website:** [https://vaultiq-eight.vercel.app](https://vaultiq-eight.vercel.app)
 
 ---
 
@@ -166,8 +164,4 @@ The app is deployed on Vercel. Environment variables are configured in the Verce
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RAJ-SUHANDANI/VaultIQ)
 
----
 
-## License
-
-MIT
