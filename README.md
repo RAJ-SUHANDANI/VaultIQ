@@ -157,5 +157,6 @@ All data is persisted in Supabase with Row-Level Security. Each user can only se
 | `/dashboard/profile` | User profile settings |
 
 
-
+## LIVE PREVIEW
+The website is currently deployed on Open [https://vaultiq-eight.vercel.app/](https://vaultiq-eight.vercel.app/).
 
