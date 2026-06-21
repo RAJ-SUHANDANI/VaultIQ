@@ -10,11 +10,13 @@ interface AppState {
 
   theme: 'dark' | 'light';
   sidebarCollapsed: boolean;
+  mobileSidebarOpen: boolean;
   loaded: boolean;
 
   setTheme: (t: 'dark' | 'light') => void;
   toggleTheme: () => void;
   setSidebarCollapsed: (v: boolean) => void;
+  setMobileSidebarOpen: (v: boolean) => void;
 
   setProfile: (p: Profile | null) => void;
   setCategories: (c: Category[]) => void;
@@ -46,6 +48,7 @@ export const useStore = create<AppState>((set, get) => ({
   goals: [],
   theme: 'dark',
   sidebarCollapsed: false,
+  mobileSidebarOpen: false,
   loaded: false,
 
   setTheme: (t) => {
@@ -60,6 +63,7 @@ export const useStore = create<AppState>((set, get) => ({
     get().setTheme(next);
   },
   setSidebarCollapsed: (v) => set({ sidebarCollapsed: v }),
+  setMobileSidebarOpen: (v) => set({ mobileSidebarOpen: v }),
 
   setProfile: (p) => set({ profile: p }),
   setCategories: (c) => set({ categories: c }),

@@ -104,7 +104,7 @@ export default function TransactionsPage() {
             className="pl-10 bg-muted/50 border-border rounded-xl" />
         </div>
         <Select value={categoryFilter} onValueChange={(v) => v && setCategoryFilter(v)}>
-          <SelectTrigger className="w-[200px] bg-muted/50 border-border rounded-xl">
+          <SelectTrigger className="w-full sm:w-[200px] bg-muted/50 border-border rounded-xl">
             <Filter className="mr-2 h-4 w-4" />
             <SelectValue placeholder="All Categories">
               {(v: any) => {
@@ -128,6 +128,7 @@ export default function TransactionsPage() {
       </div>
 
       <div className="tx-anim border border-border rounded-2xl overflow-hidden bg-card">
+        <div className="overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow className="hover:bg-transparent border-border">
@@ -180,6 +181,7 @@ export default function TransactionsPage() {
             )}
           </TableBody>
         </Table>
+        </div>
       </div>
 
       {totalPages > 1 && (

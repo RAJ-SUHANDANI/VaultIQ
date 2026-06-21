@@ -81,7 +81,7 @@ export default function ProfilePage() {
         <p className="text-sm text-muted-foreground">Your account and financial summary</p>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="grid gap-6 grid-cols-1 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-6">
           <Card className="prof-anim border-border bg-card rounded-2xl">
             <CardContent className="p-6">

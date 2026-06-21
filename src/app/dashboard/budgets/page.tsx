@@ -288,7 +288,7 @@ export default function BudgetsPage() {
                           <Progress value={Math.min(progress, 100)} className="h-2 [&>div]:bg-emerald-500" />
                         </div>
                       </div>
-                      <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row gap-2">
                         {[1000, 5000, 10000].map((amt) => (
                           <Button key={amt} variant="outline" size="sm"
                             onClick={() => handleAddToGoal(goal.id, amt)}

@@ -80,7 +80,7 @@ export default function AnalyticsPage() {
         <p className="text-sm text-muted-foreground">Deep insights into your financial habits</p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-4">
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
         <Card className="chart-anim border-border bg-card rounded-2xl">
           <CardContent className="p-5">
             <div className="flex items-center gap-3">
@@ -138,7 +138,7 @@ export default function AnalyticsPage() {
           <Card className="border-border bg-card rounded-2xl">
             <CardHeader><CardTitle className="text-lg text-foreground">Monthly Spending</CardTitle></CardHeader>
             <CardContent>
-              <div className="h-[350px]">
+              <div className="h-[250px] sm:h-[350px]">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={monthlyData}>
                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
@@ -154,11 +154,11 @@ export default function AnalyticsPage() {
         </TabsContent>
 
         <TabsContent value="categories" className="mt-4">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="border-border bg-card rounded-2xl">
               <CardHeader><CardTitle className="text-lg text-foreground">Category Breakdown</CardTitle></CardHeader>
               <CardContent>
-                <div className="h-[300px]">
+                <div className="h-[250px] sm:h-[300px]">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
                       <Pie data={categoryData} cx="50%" cy="50%" innerRadius={60} outerRadius={100} paddingAngle={3} dataKey="value">
@@ -194,7 +194,7 @@ export default function AnalyticsPage() {
           <Card className="border-border bg-card rounded-2xl">
             <CardHeader><CardTitle className="text-lg text-foreground">Spending Trend</CardTitle></CardHeader>
             <CardContent>
-              <div className="h-[350px]">
+              <div className="h-[250px] sm:h-[350px]">
                 <ResponsiveContainer width="100%" height="100%">
                   <AreaChart data={monthlyData}>
                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
