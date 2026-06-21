@@ -158,5 +158,5 @@ All data is persisted in Supabase with Row-Level Security. Each user can only se
 
 
 ## LIVE PREVIEW
-The website is currently deployed on Open [https://vaultiq-eight.vercel.app/](https://vaultiq-eight.vercel.app/).
+The website is currently deployed on [https://vaultiq-eight.vercel.app/](https://vaultiq-eight.vercel.app/).
 
