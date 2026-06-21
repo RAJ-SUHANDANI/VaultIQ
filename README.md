@@ -156,12 +156,6 @@ All data is persisted in Supabase with Row-Level Security. Each user can only se
 | `/dashboard/transactions` | Searchable, filterable, paginated expense table |
 | `/dashboard/profile` | User profile settings |
 
----
 
-## Deployment
-
-The app is deployed on Vercel. Environment variables are configured in the Vercel dashboard.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RAJ-SUHANDANI/VaultIQ)
 
 
