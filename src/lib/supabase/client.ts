@@ -15,17 +15,6 @@ export function createClient() {
       autoRefreshToken: true,
       detectSessionInUrl: true,
     },
-    global: {
-      fetch: (url, init) =>
-        fetch(url, init).then(async (res) => {
-          if (!res.ok) {
-            const body = await res.text();
-            console.error(`[Supabase] ${res.status} ${res.url}:`, body);
-            throw new Error(body || `HTTP ${res.status}`);
-          }
-          return res;
-        }),
-    },
   });
   return cachedClient;
 }
